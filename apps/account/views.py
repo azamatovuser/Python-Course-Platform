@@ -35,8 +35,8 @@ def register_view(request):
     return render(request, 'account/register.html', ctx)
 
 
-# def logout_view(request):
-#     if request.method == 'POST':
-#         logout(request)
-#         return redirect('main:index')
-#     return render(request, 'account/logout.html')
+def logout_view(request):
+    if request.method == 'POST':
+        logout(request)
+        return redirect('main:index')
+    return render(request, 'account/logout.html')
