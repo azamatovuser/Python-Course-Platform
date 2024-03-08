@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Python</title>
+</head>
+<body>
+    <header>
+        <div class="SignUp container">
+            <nav>
+                <a href="login.html"><button class="toLogin logout">Login</button></a>
+                <a href="register.html"><button class="toRegister">Registratsiya</button></a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="mainPage container">
+            <img src="{% static 'img/mainPicture.png' %}" alt="mainPicture">
+            <div class="box-for-pythonText">
+                <h1 class="pythonText">Python’ga bitta imkon berip ko’ramizmi?</h1>
+
+            </div>
+            <p class="websiteDescription">Bu yerda siz Python dasturlash tili haqida o’quv videolar ko’rishingiz va o’rganishingiz mumkun</p>
+            <a href="{% url 'list_course' %}"><button class="mainBtn">O’rganishni boshlash</button></a>
+        </section>
+    </main>
+</body>
+</html>

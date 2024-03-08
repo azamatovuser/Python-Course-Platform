@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+.container{
+    max-width: 1990px;
+    margin: 0 auto;
+}
+
+
+
+.SignUp{
+    padding: 25px 80px;
+    display: flex;
+    justify-content: end;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.toLogin{
+    padding: 9px 35px;
+    border-radius: 12px;
+    color: #5A9CFF;
+    background-color: inherit;
+    border: 3px solid #5A9CFF;
+    margin-right: 25px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.toRegister{
+    padding: 9px 29px;
+    border-radius: 12px;
+    color: white;
+    background-color: #5A9CFF;
+    border: 3px solid #5A9CFF;
+    margin-right: 25px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.toRegister:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: inherit;
+    color: #5A9CFF;
+}
+
+
+
+
+.mainPage{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainPage img{
+    margin: 0;
+    padding: 0;
+}
+.box-for-pythonText{
+    width: 700px;
+    height: 70px;
+    border-radius: 25px;
+    background-color: #5A9CFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+    color: white;
+}
+.websiteDescription{
+    margin: 25px 0;
+    font-size: 17px;
+    font-weight: 500;
+    max-width: 410px;
+    line-height: 23px;
+    text-align: center;
+    
+}
+.mainBtn{
+    padding: 17px;
+    background-color: #5A9CFF;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: center;
+    border: 3px solid #5A9CFF;
+    border-radius: 15px;
+}
+.mainBtn:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: inherit;
+    color: #5A9CFF;
+}
+
+
+.registration{
+    display: flex;
+}
+.registerText{
+    padding: 20px 50px;
+    width: 50%;
+    font-family: "Montserrat";
+}
+.registerText h2{
+    margin-top: 70px;
+    font-size: 40px;
+}
+.registerBtn{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 38px;
+}
+.registerText input{
+    margin-top: 30px;
+    border: inherit;
+    border-bottom: 1px solid black;
+    width: 370px;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 7px 0;
+    font-family: "Montserrat";
+
+}
+
+.registerImg{
+    width: 50%;
+}
+.registerImg img{
+    width: 100%;
+}
+
+
+.login{
+    display: flex;
+}
+.loginText{
+    padding: 20px 50px;
+    width: 50%;
+    font-family: "Montserrat";
+}
+.loginText h2{
+    margin-top: 70px;
+    font-size: 40px;
+}
+.loginBtn{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 42px;
+}
+.loginText input{
+    margin-top: 30px;
+    border: inherit;
+    border-bottom: 1px solid black;
+    width: 370px;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 7px 0;
+    font-family: "Montserrat";
+
+}
+
+.loginImg{
+    width: 50%;
+}
+.loginImg img{
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.videos-header{
+    padding: 13px 80px;
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.videos-header div{
+    width: 33%;
+}
+.pythonImg{
+    width: 77px;
+    height: 79px;
+}
+.pythonImg:hover{
+    cursor: pointer;
+    transition: 2s;
+    transform: scale(1.2);
+
+}
+.pythonImg-box{
+    display: flex;
+    justify-content: center;
+}
+.logout{
+    padding: 9px 35px;
+    border-radius: 12px;
+    color: #5A9CFF;
+    background-color: inherit;
+    border: 3px solid #5A9CFF;
+    margin-right: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    
+}
+.logout:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: #5A9CFF;
+    color: white;
+}
+.logoutBtn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.videoLessons{
+    margin: 70px 0;
+}
+.videoLessons h1{
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+}
+.lesson{
+    margin: 0 auto;
+    width: 900px;
+    height: 78px;
+    border-radius: 15px;
+    background-color: #5A9CFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 20px !important;
+    color: white;
+    margin-top: 50px;
+    
+}
+.lesson:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: inherit;
+    color: #5A9CFF;
+    border: 1px solid #5A9CFF;
+}
+.lessonDescription{
+    max-width: 1090px;
+    padding: 120px 0;
+}
+.pythonDescription{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: left;
+
+}
+.whatIsPython{
+    
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.lesson1-video{
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+.next-video{
+    margin-top: 16px;
+    display: flex;
+    justify-content: end;
+    
+}
+a{
+    text-decoration: none;
+}

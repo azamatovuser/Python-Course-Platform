@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Detail Video</title>
+</head>
+<body>
+    <header>
+        <div class="videos-header">
+            <div class="void">
+            </div>
+            <div class="pythonImg-box">
+                <a href="{% url 'list_course' %}"><img src="{% static 'img/python.png' %}" alt="python" class="pythonImg"></a>
+            </div>
+            <div class="logoutBtn">
+                <a href="./login.html"><button class="logout">Logout</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="lessonDescription container">
+            <div class="whatIsPython">
+                <h2>{{ course.title }}</h2>
+            </div>
+            <iframe width="1090" height="628" src="https://www.youtube.com/watch?v=P8XvMo_NNvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="lesson1-video"></iframe>
+            <div class="pythonDescription">
+
+                <p>{{ course.description }}</p>
+
+            </div>
+            <div class="next-video">
+                <a href="{% url 'detail_course' course.id|add:1 %}"><button class="next-videoBtn mainBtn">Kengi video</button></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
