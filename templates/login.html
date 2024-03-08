@@ -1,24 +1,31 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
+<form method="post">
+    {% csrf_token %}
     <section class="login ">
         <div class="loginText">
-            <img src="./img/python.png" alt="">
+            <img src="{% static 'img/python.png' %}" alt="">
             <h2>Login qilish</h2><br>
-            <input type="text" placeholder="Username"><br><br>
-            <input type="password" placeholder="Password"><br><br>
-            <a href="./ListOfVideo.html"><button class="loginBtn mainBtn">Saytga login qilish</button></a>
+            <input name="username" type="text" placeholder="Username"><br><br>
+            <input name="password" type="password" placeholder="Password"><br><br>
+            <a href="{% url 'list_course' %}">
+                <button type="submit" class="loginBtn mainBtn">Saytga login qilish</button>
+            </a>
         </div>
-        <div class="loginImg"><img src="./img/Rectangle 5 (1).png" alt=""></div>
+        <div class="loginImg"><img src="{% static 'img/Rectangle 5 (1).png' %}" alt=""></div>
     </section>
+</form>
 </body>
 </html>
