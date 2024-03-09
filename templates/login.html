@@ -16,7 +16,7 @@
     {% csrf_token %}
     <section class="login ">
         <div class="loginText">
-            <img src="{% static 'img/python.png' %}" alt="">
+            <a href="{% url 'index' %}"><img src="{% static 'img/python.png' %}" alt=""></a>
             <h2>Login qilish</h2><br>
             <input name="username" type="text" placeholder="Username"><br><br>
             <input name="password" type="password" placeholder="Password"><br><br>
