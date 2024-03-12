@@ -260,6 +260,7 @@
     font-weight: 500;
     line-height: 29px;
     text-align: left;
+    max-width: 1090px;
 
 }
 .whatIsPython{
